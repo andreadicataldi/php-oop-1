@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+  background-color: turquoise;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}

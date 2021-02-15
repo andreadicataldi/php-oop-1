@@ -34,20 +34,22 @@ $videogames = [$mgs, $ff7, $shenmue, $fable, $halo];
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Videogames</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <?php
-  foreach ($videogames as $videogame) { ?>
-    <div class="card">
-      <h2><?php echo $videogame->title ?></h2>
-      <p><?php echo $videogame->studio ?></p>
-      <p><?php echo $videogame->genre ?></p>
-      <p><?php echo $videogame->platform ?></p>
-      <p><?php echo $videogame->price ?></p>
-    </div>
-  <?php } ?>
-
+  <div class="container">
+    <?php
+    foreach ($videogames as $videogame) { ?>
+      <div class="card">
+        <h2><?php echo $videogame->title ?></h2>
+        <p>Studio: <?php echo $videogame->studio ?></p>
+        <p>Genre: <?php echo $videogame->genre ?></p>
+        <p>Platform: <?php echo $videogame->platform ?></p>
+        <p>Price: <?php echo $videogame->price ?>€</p>
+      </div>
+    <?php } ?>
+  </div>
 </body>
 
 </html>
