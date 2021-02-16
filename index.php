@@ -17,13 +17,14 @@ class Videogame
   }
 }
 
-$mgs = new Videogame('Metal Gear Solid', 'Konami', 'Stealth', 'PlayStation', 69.99);
-$ff7 = new Videogame('Final Fantasy VII', 'Squaresoft', 'JRPG', 'PlayStation', 59.99);
-$shenmue = new Videogame('Shenmue', 'SEGA', 'Adventure', 'Dreamcast', 69.99);
-$fable = new Videogame('Fable', 'Lionhead Studios', 'RPG', 'Xbox', 59.99);
-$halo = new Videogame('Halo: Combat Evolved', 'Bungie', 'FPS', 'Xbox', 59.99);
-
-$videogames = [$mgs, $ff7, $shenmue, $fable, $halo];
+$videogames = [
+  $mgs = new Videogame('Metal Gear Solid', 'Konami', 'Stealth', 'PlayStation', 69.99),
+  $ff7 = new Videogame('Final Fantasy VII', 'Squaresoft', 'JRPG', 'PlayStation', 59.99),
+  $shenmue = new Videogame('Shenmue', 'SEGA', 'Adventure', 'Dreamcast', 69.99),
+  $fable = new Videogame('Fable', 'Lionhead Studios', 'RPG', 'Xbox', 59.99),
+  $halo = new Videogame('Halo: Combat Evolved', 'Bungie', 'FPS', 'Xbox', 59.99),
+  $sims = new Videogame('The Sims', 'EA', 'Life Simulator', 'Microsoft Windows', 49.99)
+];
 ?>
 
 <!DOCTYPE html>
